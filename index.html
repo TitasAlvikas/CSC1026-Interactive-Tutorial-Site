@@ -1,11 +1,94 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>
-A Simple HTML Document
-</title>
+
+<title>CSC1026 Interactive Tutorial Site</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="css/core.css"/>
+<script type="text/javascript" src="js/indexscript.js"></script>
+<link rel="icon" href="img/icon.png" />
+
 </head>
 <body>
-<p>This is a very simple HTML document</p>
-<p>It only has two paragraphs</p>
+<div id="container">
+<div id="banner">
+<p>
+<img src="img/web-logo.png" alt="web logo" width="88" height="90"/><!--location of resource- http://knowyourmeme.com/photos/1107727-the-internet-->
+</p>
+
+<h1>CSC1026 Interactive Tutorial Site</h1>
+
+</div>
+<div id="navcontainer">
+<ul id="navbar">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="part1.html">HTML</a></li>
+		<li><a href="part2.html">CSS</a></li>
+		<li class="dropdown"><a href="part3.html">HTTP Requests, Web Clients and URLs</a>
+		<div class="dropdown-content">
+					<a href="part3.html#HTTP_Requests">HTTP Requests</a>
+					<a href="part3.html#Web_Clients">Web Clients</a>
+					<a href="part3.html#URLs">URLs</a>
+		</div>
+		</li>
+		<li><a href="quiz.html">Quiz</a></li>
+</ul>
+</div>
+<div id="content">
+
+<h2 id="separate">An educational website for the CSC1026 lecture material on website design and development.</h2>
+
+<h2>Random Topic</h2>
+<p>
+<a id="randomTopic">Click on this link to navigate to a random topic</a>
+</p>
+
+<h2>Start Quiz</h2>
+<p>
+<a href="quiz.html">Ready to be assessed? Click here to start the quiz</a>
+</p>
+
+<h2>W3Schools Website</h2>
+<p>
+<a href="https://www.w3schools.com/"><img class="screenshot" src="img/w3schools.png" alt="screenshot of w3school website" /></a>
+Material from <a href="https://www.w3schools.com/">w3schools.com</a>
+</p>
+
+<h2>Site Overview</h2>
+<p>
+Learn the basics of HTML, CSS, HTTP requests and an overview of web clients and URLs. Below is a slideshow to show what this website
+has to offer for new learners of the website design and development module:
+</p>
+
+<p>
+<img class="mySlides" src="img/slideshow1.png" alt="screenshot of HTML page of this website" />
+<img class="mySlides" src="img/slideshow2.png" alt="screenshot of CSS page of this website" />
+<img class="mySlides" src="img/slideshow3.png" alt="screenshot of HTTP requests part of this website" />
+<img class="mySlides" src="img/slideshow4.png" alt="screenshot of URLs of this website" />
+<img class="mySlides" src="img/slideshow5.png" alt="screenshot of quiz page of this website" />
+</p>
+
+<h2>External Websites</h2>
+
+<ul>
+		<li><a href="https://www.w3.org/">World Wide Web Consortium (W3C) Website</a></li>
+		<li><a href="https://www.w3schools.com/html/default.asp">W3Schools Website</a></li>
+		<li><a href="https://www.tutorialspoint.com/http/http_requests.htm">Tutorials Point: HTTP Requests</a></li>
+		<li><a href="https://css-tricks.com/">CSS Tricks Website</a></li>
+		<li><a href="https://www.webjunction.org/documents/webjunction/URLs_Explained.html">URLs Explained</a></li>
+		<li><a href="https://en.wikipedia.org/wiki/Timeline_of_web_browsers">Timeline of Web Browsers on Wikipedia</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL">What is a URL</a></li>
+</ul>
+</div>
+<hr/>
+
+<div id="footer">
+<p>
+Information from <a href="https://www.ncl.ac.uk/computing">Newcastle University School of Computing Science</a> | Design by <a href="http://www.mitchinson.net">www.mitchinson.net</a>
+</p>
+</div>
+</div>
+
 </body>
 </html>
