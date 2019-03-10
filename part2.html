@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>CSC1026 Interactive Tutorial Site</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="css/core.css"/>
+<link rel="icon" href="img/icon.png" />
+
+</head>
+<body>
+<div id="container">
+<div id="banner">
+<p>
+<img src="img/css3-logo.png" alt="CSS3 logo" height="170" />
+</p>
+
+<h1>CSS</h1>
+
+</div>
+<div id="navcontainer">
+<ul id="navbar">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="part1.html">HTML</a></li>
+		<li><a href="part2.html">CSS</a></li>
+		<li class="dropdown"><a href="part3.html">HTTP Requests, Web Clients and URLs</a>
+		<div class="dropdown-content">
+					<a href="part3.html#HTTP_Requests">HTTP Requests</a>
+					<a href="part3.html#Web_Clients">Web Clients</a>
+					<a href="part3.html#URLs">URLs</a>
+		</div>
+		</li>
+		<li><a href="quiz.html">Quiz</a></li>
+</ul>
+</div>
+<div id="content">
+
+<div class="contentbox">
+<h2>Subtopics:</h2>
+<ul>
+		<li><a href="#Intro">CSS introduction</a></li>
+		<li><a href="#Syntax">CSS syntax</a></li>
+		<li><a href="#CSS_Properties">Advanced CSS properties</a></li>
+		<li><a href="#Box_Model">CSS box model</a></li>
+		<li><a href="#Positioning">CSS positioning</a></li>
+</ul>
+</div>
+
+<div class="contentbox">
+<h2 id="Intro">CSS introduction</h2>
+<p>
+Cascading Style Sheets were first introduced in 1994 alongside the development of HTML and give separation of webpage content
+and presentation. When HTML was developed it was never intended to handle the presentation of webpages and so the
+introduction of CSS was able to solve a very large problem in web development.
+</p>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<div class="largecontent">
+<h2 id="Syntax">CSS syntax</h2>
+<p>
+CSS rules are defined inside curly braces in the form: <i>style-property: value;</i>
+<img class="cssexamples" src="img/paragraph-css.png" alt="CSS code for paragraph" height="" />
+<img class="cssexamples" src="img/paragraph.png" alt="A paragraph displayed on a browser" height="" />
+External style sheets can be linked to a web document using the &lt;link&gt; tag:
+</p>
+<p class="examples">
+&lt;link rel="stylesheet" type="text/css" href="cssfileURL.css" /&gt;<br />
+</p>
+</div>
+<div class="largecontent">
+<p>
+HTML elements can be styled by the tag name.
+
+Class attributes are used as selectors to style certain HTML elements.
+<img class="cssexamples" src="img/classes-css.png" alt="CSS code styling for a heading and two paragraphs" height="" />
+<img class="cssexamples" src="img/classes-paragraphs.png" alt="HTML markup of two paragraphs" height="" />
+<img class="cssexamples" src="img/paragraphs-using-classes.png" alt="two paragraphs displayed in browser with CSS classes" height="" />
+</p>
+</div>
+<div class="largecontent">
+<p>
+Id attributes are used as selectors for unique elements.
+<img class="cssexamples" src="img/heading-id-css.png" alt="CSS code styling for a unique heading" height="" />
+<img class="cssexamples" src="img/two-headings-html.png" alt="HTML markup of two headings" height="" />
+<img class="cssexamples" src="img/two-headings.png" alt="two paragraphs displayed in browser with CSS classes" height="" />
+</p>
+
+<table border="1">
+	<tr>
+	<th>Selector Syntax</th><th>Matched elements</th>
+	</tr>
+	<tr>
+	<td>li</td><td>All &lt;li&gt; tags</td>
+	</tr>
+	<tr>
+	<td>.classname</td><td>All tags with class attribute as 'classname'</td>
+	</tr>
+	<tr>
+	<td>li.classname</td><td>All &lt;li class="classname"&gt; tags </td>
+	</tr>
+	<tr>
+	<td>#uniqueid</td><td> The only &lt;anyTag id="uniqueid"&gt; tag</td>
+	</tr>
+	<tr>
+	<td>#uniqueid li</td><td>All &lt;li&gt; tags nested anywhere inside the only &lt;anyTag id="uniqueid"&gt; tag</td>
+	</tr>
+	<tr>
+	<td>#uniqueid > li</td><td>All &lt;li&gt; tags hat are direct children of the only &lt;anyTag id="uniqueid"&gt; tag</td>
+	</tr>
+	<tr>
+	<td>#uniqueid li.classname</td><td>All &lt;li class="classname"&gt; tags nested anywhere inside the only &lt;anyTag id="uniqueid"&gt; tag</td>
+	</tr>
+	<tr>
+	<td>div#uniqueid li</td><td>All &lt;li&gt; tags nested anywhere inside the only &lt;div id="uniqueid"&gt; tag</td>
+	</tr>
+</table>
+</div>
+</div>
+
+
+<hr/>
+
+
+<div class="contentbox">
+<div class="largecontent">
+<h2 id="CSS_Properties">Advanced CSS properties</h2>
+<p>
+CSS units can be specified as a measurement (absolute units) of either pixels (px), points (pt) or millimetres (mm).
+CSS units can also be specified relative to other page elements (relative units) as percentages (%), emes (em) or exes (ex)
+</p>
+<p>
+There is more than one way to specify a colour for page elements. The available options are:<br />
+color: blue;<br />
+color: rgb(0,67,235);<br />
+color: AF385F;
+</p>
+<p>
+CSS has some pseudo elements aimed at styling a special part of a tag.
+tagname:first-letter can select the first letter of body of text.
+
+<img class="cssexamples" src="img/first-letter-css.png" alt="CSS code styling for first letter of a heading" />
+<img class="cssexamples" src="img/heading-html.png" alt="HTML markup of a heading" />
+<img class="cssexamples" src="img/first-letter-heading.png" alt="A heading with a large first letter displayed in a browser" />
+</p>
+</div>
+<div class="largecontent">
+<p>
+Additional pseudo classes can change the styling of an element based on a special status of some elements.
+
+<img class="cssexamples" src="img/css-pseudo-classes.png" alt="CSS code styling different pseudo classes of a link" />
+<img class="cssexamples" src="img/link-html.png" alt="HTML markup of a simple link" />
+<img class="cssexamples" src="img/a-link.png" alt="a normal link in a browser" />
+<img class="cssexamples" src="img/a-link-hover.png" alt="a link with mouse hovered over it displayed in a browser" />
+<img class="cssexamples" src="img/a-link-active.png" alt="a link clicked over displayed in a browser" />
+<img class="cssexamples" src="img/a-link-visited.png" alt="a visited link displayed in a browser" />
+</p>
+</div>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<div class="largecontent">
+<h2 id="Box_Model">CSS box model</h2>
+<p>
+Fundamental part of the box model is that each element on the page is represented as a box.
+</p>
+<p>
+The border of a box is the outline of the box represented by three separate properties.
+These are the border-width, border-style and border-color and has the following shorthand notation.
+Note: CSS3 provides additional supprt for rounder box borders using the border-radius property
+and shadows around borders using the box-shadow property.
+<img class="cssexamples" src="img/css-border.png" alt="CSS code styling for a box with a border" />
+<img class="cssexamples" src="img/text-in-box-html.png" alt="HTML markup of some text in a paragraph" />
+<img class="cssexamples" src="img/box-with-border.png" alt="some text in a box with a border displayed in a browser" />
+</p>
+</div>
+<div class="largecontent">
+<p>
+A padding is the space between the outside edge of the content and the inside edge of the box.
+The space created by the padding is always inside the box.
+<img class="cssexamples" src="img/css-padding.png" alt="CSS code styling for a box with padding" />
+<img class="cssexamples" src="img/text-in-box-html.png" alt="HTML markup of some text in a paragraph" />
+<img class="cssexamples" src="img/box-with-padding.png" alt="some text in a box with padding and a border displayed in a browser" />
+</p>
+</div>
+<div class="largecontent">
+<p>
+The margin of the CSS box model is the space around the outside edge of a box including the box border.
+<img class="cssexamples" src="img/css-margin.png" alt="CSS code styling for a box with margins" />
+<img class="cssexamples" src="img/text-in-box-html.png" alt="HTML markup of some text in a paragraph" />
+<img class="cssexamples" src="img/box-with-margin.png" alt="some text in a box with margins, padding and a border displayed in a browser" />
+</p>
+</div>
+<div class="largecontent">
+<p>
+The width and height properties specify the dimensions of only the content width and height of a box.
+The min-width and max-width properties can also be set to specify the minimum and maximum sizes of a box.
+Note: IE box model uses CSS width for the total dimensions of a box. IE+ now uses the standard model if a
+correct DTD has been declared.
+<img class="cssexamples" src="img/css-width.png" alt="CSS code styling for a paragraph with width" />
+<img class="cssexamples" src="img/text-in-box-html.png" alt="HTML markup of some text in a paragraph" />
+<img class="cssexamples" src="img/box-with-width.png" alt="some text in a box with a specified width" />
+</p>
+</div>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<div class="largecontent">
+<h2 id="Positioning">CSS positioning</h2>
+<p>
+CSS boxes can be floated to the side of a webpage giving us a very good way of positioning some content.
+It is worth noting that when an element is floated it is taken out of the natural page flow and the next element
+takes up the background space of the floated box.
+<img class="cssexamples" src="img/float-css.png" alt="CSS code styling for three boxes with one box floated to the left" />
+<img class="cssexamples" src="img/three-boxes-html.png" alt="HTML markup of three coloured boxes with text" />
+<img class="cssexamples" src="img/box-float.png" alt="three boxes of text with one box floated left displayed in a browser" />
+</p>
+</div>
+<div class="largecontent">
+<p>
+The clear property can be used to stop a float from covering later content under a box.
+The clear property can take the values left, right or both to specify which side of a box to clear any floats.
+<img class="cssexamples" src="img/clear-css.png" alt="CSS code styling for three boxes with one floated left and one cleared left" />
+<img class="cssexamples" src="img/three-boxes-html.png" alt="HTML markup of three coloured boxes with text" />
+<img class="cssexamples" src="img/box-clear.png" alt="three boxes of text with one box floated left and one box cleared left displayed in a browser" />
+</p>
+</div>
+<div class="largecontent">
+<p>
+The position property allows you to specify exact positions from certain elements.
+The relative value can position an element relative to its original position in the natural page flow.
+You can specify the distances from the top left of an element's original positiom using the left, right,
+top and bottom properties.
+Note: The relative position will still leaves the element in the page flow.
+<img class="cssexamples" src="img/relative-css.png" alt="CSS code styling for a box with position relative" />
+<img class="cssexamples" src="img/three-boxes-html.png" alt="HTML markup of three coloured boxes with text" />
+<img class="cssexamples" src="img/position-relative.png" alt="three boxes of text with one positioned relative displayed in a browser" />
+</p>
+</div>
+<div class="largecontent">
+<p>
+The absolute position takes an element out of the page flow and positions it with the specified offset from it's
+parent container.
+<img class="cssexamples" src="img/absolute-css.png" alt="CSS code styling for a box with position absolute" />
+<img class="cssexamples" src="img/three-boxes-html.png" alt="HTML markup of three coloured boxes with text" />
+<img class="cssexamples" src="img/position-absolute.png" alt="three boxes of text with one positioned absolute displayed in a browser" />
+</p>
+</div>
+<div class="largecontent">
+<p>
+Fixed positioning takes an element from the page flow and fixes it to the browser viewing screen so that
+scrolling will not affect the element's position.
+<img class="cssexamples" src="img/fixed-css.png" alt="CSS code styling for a box with position fixed" />
+<img class="cssexamples" src="img/six-boxes-html.png" alt="HTML markup of six coloured boxes with text" />
+<img class="cssexamples" src="img/position-fixed.png" alt="six boxes of text with one positioned fixed displayed in a browser" />
+</p>
+</div>
+</div>
+
+
+<hr/>
+
+</div>
+
+<div id="footer">
+<p>
+Information from <a href="https://www.ncl.ac.uk/computing">Newcastle University School of Computing Science</a> | Design by <a href="http://www.mitchinson.net">www.mitchinson.net</a>
+</p>
+</div>
+</div>
+
+</body>
+</html>
