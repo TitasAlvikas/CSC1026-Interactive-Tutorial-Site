@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>CSC1026 Interactive Tutorial Site</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="css/core.css"/>
+<link rel="icon" href="img/icon.png" />
+<!--Note: The video embed from youtube in this page is only designed to work in
+chrome or firefox as the object tag does not work in IE-->
+
+</head>
+<body>
+<div id="container">
+<div id="banner">
+<p>
+<img src="img/url-image.jpg" alt="URL address" height="150"/>
+<img src="img/browser-logos.png" alt="common web clients" height="150"/>
+</p>
+
+<h1>HTTP Requests, Web Clients and URLs</h1>
+
+</div>
+<div id="navcontainer">
+<ul id="navbar">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="part1.html">HTML</a></li>
+		<li><a href="part2.html">CSS</a></li>
+		<li class="dropdown"><a href="part3.html">HTTP Requests, Web Clients and URLs</a>
+		<div class="dropdown-content">
+					<a href="part3.html#HTTP_Requests">HTTP Requests</a>
+					<a href="part3.html#Web_Clients">Web Clients</a>
+					<a href="part3.html#URLs">URLs</a>
+		</div>
+		</li>
+		<li><a href="quiz.html">Quiz</a></li>
+</ul>
+</div>
+<div id="content">
+
+<div class="contentbox">
+<h2>Subtopics:</h2>
+<ul>
+		<li><a href="#HTTP_Protocol">HTTP request-response protocol</a></li>
+		<li><a href="#Methods">HTTP methods</a></li>
+		<li><a href="#Caching">HTTP caching</a></li>
+		<li><a href="#Request_Structure">HTTP request structure</a></li>
+		<li><a href="#Response_Structure">HTTP response structure</a></li>
+</ul>
+</div>
+
+<div class="contentbox">
+<h2 id="HTTP_Requests">HTTP Requests</h2>
+<p><object width="480" height="274"
+data="https://www.youtube.com/embed/pHFWGN-upGM">
+	<param name="allowFullScreen" value="true" />
+    <param name="allowscriptaccess" value="always" />
+</object>
+</p>
+
+
+<h3 id="HTTP_Protocol">HTTP request-response protocol</h3>
+<p>
+The <strong>H</strong>yperText <strong>T</strong>ransfer <strong>P</strong>rotocol is the foundation for data communication on the World Wide Web.
+A client sends a HTTP <strong>request</strong> message to ask for resources from a server.
+Then the server answers with a <strong>response</strong> message and any content to be dispalayed.
+HTTP messages are composed of textual information encoded in ASCII.
+HTTP requests and responses are transferred by TCP/IP packets.
+A request message contains metadata in it's header and data in an optional body.
+Each HTTP request is exchanged independently.
+</p>
+
+<p>
+<img src="img/http.png" alt="HTTP request diagram" height="200"/>
+</p>
+
+<h3 id="Methods">HTTP methods</h3>
+<p>
+The HEAD and GET methods are both mandatory methods, GET requests a specified resource and HEAD asks for a response identical to that of GET but without the response body.
+The HEAD, PUT, GET and DELETE methods are all idempotent meaning that the effect of multiple requests is the same as for a single request.
+</p>
+
+<h3 id="Caching">HTTP caching</h3>
+<p>
+HTTP caching occurs when a browser stores local copies of external resources for quick retrieval of these resources. This process eases the load on the server
+as it is not required to transmit the resources again and the browser is able to load webpages quickly the next time they are reloaded.
+</p>
+
+<h3 id="Request_Structure">HTTP request structure</h3>
+<p>
+An example of a basic HTTP request is shown here:
+</p>
+<p>
+Request line:	GET /www.wikipedia.com/index.html HTTP/1.1<br />
+General headers:	Date: Tue, 23 Nov 2017 12:53:00<br />
+Request headers:	Host: b234359.ncl.ac.uk..., User-Agent: Google Chrome 68.0<br />
+Entity headers:	empty except for POST and PUT methods<br />
+Message body:	empty except for POST and PUT methods
+</p>
+
+<h3 id="Response_Structure">HTTP response structure</h3>
+<p>
+An example of a basic HTTP response is shown here:
+</p>
+<p>
+Status line:	HTTP/1.1 200 OK<br />
+General headers:	Date: Tue, 23 Nov 2017 12:57:00<br />
+Response headers:	Server: Apache/2.0<br />
+Entity headers:		Content-Length: 7398, Content-Type: text/html<br />
+Message body:<br />
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+HTML webpage content here<br />
+&lt;/html&gt;
+</p>
+</div>
+
+
+<hr/>
+
+<div class="contentbox">
+<h2 id="Web_Clients">Web Clients</h2>
+<p>
+A web client or browser is an application that provides communication to the web by using the HTTP protocol to load, display and send data to other web servers
+connected to the internet. Web browsers contain a user interface that allows users to navigate the web with back, forward and reload buttons, they allow users to
+view the websites that a user has visited and they allow a user to manage their downloads from the web. The most common web clients and widely known are:
+</p>
+<ul>
+<li>Google Chrome</li>
+<li>Mozilla Firefox</li>
+<li>Internet Explorer</li>
+<li>Safari</li>
+<li>Microsoft Edge</li>
+<li>Opera</li>
+</ul>
+</div>
+
+
+<hr/>
+
+<div class="contentbox">
+<h2 id="URLs">URLs</h2>
+<p>
+Every resource on the web has a unique location address or known as a Uniform Resource Locator (URL). Here are some examples of URLs:
+</p>
+<table border="1">
+	<tr>
+	<th>Scheme</th><th>Host</th><th>Path</th><th>Query</th><th>Fragment</th>
+	</tr>
+	<tr>
+	<td>http:</td><td>//www.wikipedia.com</td><td>/</td><td></td><td></td>
+	</tr>
+	<tr>
+	<td>http:</td><td>//www.facebook.com</td><td>/Learn-the-Net-330216/</td><td>?name=john</td><td>#section2</td>
+	</tr>
+	<tr>
+	<td>http:</td><td>//www.example.com:67 &lt;--port number</td><td>/scripts.php</td><td></td><td></td>
+	</tr>
+	<tr>
+	<td>https:</td><td>//www.google.co.uk</td><td>/search</td><td>?q=listofcountries</td><td></td>
+	</tr>
+	<tr>
+	<td>http:</td><td>//www.bbc.co.uk</td><td>/sport/football/</td><td></td><td></td>
+	</tr>
+</table>
+</div>
+
+
+<hr/>
+
+</div>
+
+<div id="footer">
+<p>
+Information from <a href="https://www.ncl.ac.uk/computing">Newcastle University School of Computing Science</a> | Design by <a href="http://www.mitchinson.net">www.mitchinson.net</a>
+</p>
+</div>
+</div>
+
+</body>
+</html>

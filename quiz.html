@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>CSC1026 Interactive Tutorial Site</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="css/core.css"/>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/quizscript.js"></script>
+<link rel="icon" href="img/icon.png" />
+
+</head>
+<body>
+<div id="container">
+<div id="banner">
+<h1>Quiz</h1>
+
+</div>
+<div id="navcontainer">
+<ul id="navbar">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="part1.html">HTML</a></li>
+		<li><a href="part2.html">CSS</a></li>
+		<li class="dropdown"><a href="part3.html">HTTP Requests, Web Clients and URLs</a>
+		<div class="dropdown-content">
+					<a href="part3.html#HTTP_Requests">HTTP Requests</a>
+					<a href="part3.html#Web_Clients">Web Clients</a>
+					<a href="part3.html#URLs">URLs</a>
+		</div>
+		</li>
+		<li><a href="quiz.html">Quiz</a></li>
+</ul>
+</div>
+<div id="content">
+
+<form id="quizform" method="get" action=""><!--https://internal.cs.ncl.ac.uk/modules/2017-18/csc1026/scripts/formscript.php-->
+<p>Each question is worth 1 mark and the quiz is out of 12 marks.</p>
+<fieldset>
+
+<legend>Question 1</legend>
+
+<label>Which HTML tag is used to display images in webpages? </label>
+<input id="Q1" type="text" name="question1" />
+
+</fieldset>
+
+<fieldset>
+
+<legend>Question 2</legend>
+<label>In which year was the HTML 4.01 version released?</label>
+<input type="radio" name="question2" value="A" id="A2" />
+<label for="A2">1999</label>
+<input type="radio" name="question2" value="B" id="B2" />
+<label for="B2">1997</label>
+<input type="radio" name="question2" value="C" id="C2" />
+<label for="C2">2002</label>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Question 3</legend>
+
+<p>Which TWO of the following are errors in this DTD declaration for XHTML 1.0?</p>
+<p>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"<br />
+"http://www.w3.org/TR/html4/strict.dtd"&gt;<br />
+&lt;html&gt;<br />
+&lt;head&gt;<br />
+&lt;title&gt;Title of document&lt;/title&gt;<br />
+&lt;/head&gt;<br />
+&lt;body&gt;<br />
+The content of the document......<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;<br />
+<input type="checkbox" name="question3" value="Yes" id="A3" />
+<label for="A3">Incorrect HTML specification link</label>
+<input type="checkbox" name="question3" value="Yes" id="B3" />
+<label for="B3">No meta tag</label>
+<input type="checkbox" name="question3" value="Yes" id="C3" />
+<label for="C3">No xmlns attribute in html tag</label>
+</p>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Question 4</legend>
+
+<p>Which of the following code snippets correctly validates as XHTML 1.0 Strict?</p>
+<p>
+1. &lt;ul&gt;<br />
+&lt;li&gt;&lt;a&gt;Bullet Item&lt;/li&gt;&lt;/a&gt;<br />
+&lt;li&gt;&lt;a&gt;Bullet Item&lt;/li&gt;&lt;/a&gt;<br />
+&lt;/ul&gt;<br />
+</p>
+<p>
+2. &lt;object width="300" height="240" /&gt;<br />
+&lt;param name="movie" value="http://videoURL.tv" /&gt;<br />
+&lt;param name="allowFullScreen" value="true" /&gt;<br />
+&lt;param name="allowScriptAccess" value="always" /&gt;<br />
+&lt;/object&gt;<br />
+</p>
+<p>
+3. &lt;p&gt;<br />
+&lt;table&gt;<br />
+	&lt;tr&gt;<br />
+	&lt;th&gt;Header 1&lt;/th&gt;&lt;th&gt;Header 2&lt;/th&gt;<br />
+	&lt;/tr&gt;<br />
+	&lt;tr&gt;<br />
+	&lt;td&gt;Data 1&lt;/td&gt;&lt;td&gt;Data 2&lt;/td&gt;<br />
+	&lt;/tr&gt;<br />
+&lt;/table&gt;<br />
+&lt;/p&gt;<br />
+</p>
+<select name="question4">
+	<option value="None" selected="selected">None</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+</select>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Question 5</legend>
+
+<label>Which HTML tag is used to display a bulleted list?</label>
+<input type="radio" name="question5" value="A" id="A5" />
+<label for="A5">&lt;ol&gt;</label>
+<input type="radio" name="question5" value="B" id="B5" />
+<label for="B5">&lt;ul&gt;</label>
+<input type="radio" name="question5" value="C" id="C5" />
+<label for="C5">&lt;list&gt;</label>
+</fieldset>
+
+<fieldset>
+
+<legend>Question 6</legend>
+
+<p>What will be the final background colour of this div?</p>
+&lt;style&gt;<br />
+#blue {<br />
+	background-color: blue;<br />
+}<br />
+.yellow {<br />
+	background-color: yellow;<br />
+}<br />
+&lt;/style&gt;<br />
+&lt;div id="blue" class="yellow"&gt;&lt;/div&gt;<br />
+
+<input type="radio" name="question6" value="A" id="A6" />
+<label for="A6">Blue - the id selector has the higher specifity</label>
+<input type="radio" name="question6" value="B" id="B6" />
+<label for="B6">Yellow - the .yellow rule is after the #blue rule</label>
+<input type="radio" name="question6" value="C" id="C6" />
+<label for="C6">Green - blue and yellow mix</label>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Question 7</legend>
+
+<p>What does CSS stand for?
+<input type="radio" name="question7" value="A" id="A7" />
+<label for="A7">Computer Style System</label>
+<input type="radio" name="question7" value="B" id="B7" />
+<label for="B7">Cascading Style Sheets</label>
+<input type="radio" name="question7" value="C" id="C7" />
+<label for="C7">Compact Styling Sheets</label>
+<input type="radio" name="question7" value="D" id="D7" />
+<label for="D7">Cascading Styling Sheets </label>
+</p>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Question 8</legend>
+
+<label>Which of the following ways will correctly import an external style sheet?</label>
+
+<input type="radio" name="question8" value="Yes" id="A8" />
+<label for="A8">&lt;link rel="stylesheet" type="text/css" href="mystylesheet.css"/>&gt;&lt;/link&gt;</label>
+<input type="radio" name="question8" value="Yes" id="B8" />
+<label for="A8">&lt;link rel="stylesheet" type="text/css" src="mystylesheet.css"/>&gt;&lt;/link&gt;</label>
+<input type="radio" name="question8" value="Yes" id="C8" />
+<label for="C8">&lt;style src="mystylesheet.css"&gt;&lt;/style&gt;</label>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Question 9</legend>
+
+<label>Which of the following css rules will add padding to just the left and right side of a box?</label>
+<input type="radio" name="question9" value="A" id="A9" />
+#box {
+	padding: 0px 20px 20px;
+}
+<label for="A9">
+</label>
+<input type="radio" name="question9" value="B" id="B9" />
+#box {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+<label for="B9">
+</label>
+<input type="radio" name="question9" value="C" id="C9" />
+#box {
+	padding: 20px;
+}
+<label for="C9">
+</label>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Question 10</legend>
+
+<label>Which HTTP method is used to get a specified resourse from the web with an empty body?</label>
+<input type="radio" name="question10" value="A" id="A10" />
+<label for="A10">GET</label>
+<input type="radio" name="question10" value="B" id="B10" />
+<label for="B10">PUT</label>
+<input type="radio" name="question10" value="C" id="C10" />
+<label for="C10">HEAD</label>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Question 11</legend>
+
+<label>What is the name of the first line in the structure of a HTTP request?</label>
+<select name="question11">
+	<option value="1">General Header</option>
+	<option value="2">Entity Line</option>
+	<option value="3">Request Line</option>
+</select>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Question 12</legend>
+
+<label>What is the name of the highlighted part of the following URL?<br />
+https://en.wikipedia.org/wiki/Internet/<span id="urlpath">?name=john</span>#Terminology</label>
+<input id="Q12" type="text" name="question12" />
+
+</fieldset>
+
+<p id="buttons">
+<input type="submit" />
+<input type="reset" />
+</p>
+
+</form>
+
+<hr/>
+
+</div>
+
+<div id="footer">
+<p>
+Information from <a href="https://www.ncl.ac.uk/computing">Newcastle University School of Computing Science</a> | Design by <a href="http://www.mitchinson.net">www.mitchinson.net</a>
+</p>
+</div>
+</div>
+
+</body>
+</html>

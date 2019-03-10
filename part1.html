@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>CSC1026 Interactive Tutorial Site</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="css/core.css"/>
+<link rel="icon" href="img/icon.png" />
+
+</head>
+<body>
+<div id="container">
+<div id="banner">
+<p>
+<img src="img/html-logo.png" alt="HTML5 logo" height="170"/>
+</p>
+
+<h1>HTML</h1>
+
+</div>
+<div id="navcontainer">
+<ul id="navbar">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="part1.html">HTML</a></li>
+		<li><a href="part2.html">CSS</a></li>
+		<li class="dropdown"><a href="part3.html">HTTP Requests, Web Clients and URLs</a>
+		<div class="dropdown-content">
+					<a href="part3.html#HTTP_Requests">HTTP Requests</a>
+					<a href="part3.html#Web_Clients">Web Clients</a>
+					<a href="part3.html#URLs">URLs</a>
+		</div>
+		</li>
+		<li><a href="quiz.html">Quiz</a></li>
+</ul>
+</div>
+<div id="content">
+
+<div class="contentbox">
+<h2>Subtopics:</h2>
+<ul>
+		<li><a href="#HTML_Versions">HTML versions</a></li>
+		<li><a href="#XHTML">XHTML</a></li>
+		<li><a href="#XML">XML</a></li>
+		<li><a href="#Ad_Disad_XHTML">Advantages and Disadvantages of XHTML</a></li>
+		<li><a href="#HTML5">HTML5</a></li>
+		<li><a href="#Which_Version">Which version of HTML should you choose?</a></li>
+		<li><a href="#Basic_Document_Structure">Basic document structure</a></li>
+		<li><a href="#DTD">DTD declaration</a></li>
+		<li><a href="#Header">Header section</a></li>
+		<li><a href="#Body">Body section</a></li>
+		<li><a href="#Block_Tags">Block-level tags</a></li>
+		<li><a href="#Inline_Tags">Inline tags</a></li>
+		<li><a href="#Structural_Grouping">Structural grouping</a></li>
+		<li><a href="#Multimedia">Images and Multimedia</a></li>
+</ul>
+</div>
+
+<div class="contentbox">
+<h2 id="HTML_Versions">HTML versions</h2>
+<p>
+The first version of HTML; HTML 1.0 was written by Tim Berners-Lee in 1993 and was
+a very simple langauge used to handle text-based documents. The next versions of HTML;
+HTML 2.0 up to HTML 3.2 standardised the features of the language by adding in forms,
+tables, applets (java programs used in a webpage) and text flow around images. In
+1999 HTML 4.01 was released giving support for CSS (Cascading Style Sheets) styling,
+Javascript, imporved document rendering and standardised support for multimedia.
+</p>
+</div>
+ 
+<hr/>
+ 
+<div class="contentbox">
+<h2 id="XHTML">XHTML</h2>
+<p>
+XHTML 1.0 was created to tighten up on the HTML syntax using XML (Extensible Markup Language)
+markup rules. The tags and attributes used in XHTML are the same as in HTML 4.01 with the
+only differences being in the structure and syntax of the markup language. These
+differences are:
+</p>
+
+<ul>
+		<li>XHTML elements must be properly nested.</li>
+		<li>XHTML elements must always be closed.</li>
+		<li>XHTML tags and attributes must be in lowercase.</li>
+		<li>Attribute values must be quoted.</li>
+		<li>XHTML DOCTYPE declarations are mandatory.</li>
+</ul>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<h2 id="XML">XML</h2>
+<p>
+XML is a standardised specification of creating new markup languages. XML and HTML were derived
+from SGML (Standard Generalized Markup Language). Many document formats have been developed using
+the XML syntax including RSS, SVG and XHTML. The design goals of XML focus on simplicity, generality
+and usability across the web.
+</p>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<h2 id="Ad_Disad_XHTML">Advantages and Disadvantages of XHTML</h2>
+<p>
+Advantages:
+</p>
+<ul>
+		<li>XHTML allows for increased portability of webpages across wireless devices and other specific web environments.</li>
+		<li>Pages written in XHTML display more predictably in browsers.</li>
+		<li>XHTML webpages can be easily converted to other file formats such as PDF and RSS.</li>
+</ul>
+
+<p>
+Disadvantages:
+</p>
+<ul>
+		<li>Developers writing XHTML are prone to making easy mistakes with the strict markup.</li>
+		<li>Currently there are not enough browsers that are compatible with XHTML (Microsoft Internet Explorer does not properly support XHTML).</li>
+</ul>
+</div>
+ 
+<hr/>
+
+
+<div class="contentbox">
+<h2 id="HTML5">HTML5</h2>
+<p>
+After developing HTML 4.01 and XHTML 1.0, the people in charge of creating new HTML versions went on to create the new version of HTML5
+which introduces some new tags and attributes (mainly &lt;video&gt;, &lt;audio&gt; and &lt;canvas&gt; tags) and allows you to describe the
+semantics of a website's content. HTMl5 reduces the need for browser plugins to use interactive content and provides compatibility to use the
+new CSS3 version of CSS. This latest version of HTML also provides extentsion to the Document Object Model (DOM).
+</p>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<h2 id="Which_Version">Which version of HTML should you choose?</h2>
+<p>
+Which ever language you choose to use to develop a website with you must make sure that the markup validates with the current standards for that
+language on one of these official validator websites:
+</p>
+<p>
+<a href="http://validator.w3.org/">http://validator.w3.org/</a>
+</p>
+<p>
+<a href="http://validator.nu/">http://validator.nu/</a>
+</p>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<h2 id="Basic_Document_Structure">HTML: Basic document structure</h2>
+<p>
+The W3C website outlines the basic structure of a HTML document:
+</p>
+<ol>
+		<li>A line containing HTML version information</li>
+		<li>A declarative header section (delimited by the HEAD element)</li>
+		<li>A body, which contains the document's actual content. The body may be implemented by the BODY element or the FRAMESET element.</li>
+</ol>
+<p>
+Sections 2 and 3 should be delimited by the &lt;html&gt; element.
+</p>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<h2 id="DTD">DTD declaration</h2>
+<p>
+The DTD (Document Type Declaration) defines which version of HTML should be used and how the web browser should render the markup.<br />
+An example of a DTD declaration for a HTML 4.01 web document:
+</p>
+<p class="examples">
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"<br />
+"http://www.w3.org/TR/html4/strict.dtd"&gt;
+</p>
+<p>
+The PUBLIC part identifies which version of HTML should be used.
+The URL defines the location of the markup specification.
+</p>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<h2 id="Header">Header section</h2>
+<p>
+The declarative header section includes a &lt;title&gt; tag and which character set to use.
+Some optional declaratins include a &lt;meta&gt; tag for metadata, &lt;script&gt; tags for javascript files, &lt;style&gt; and/or &lt;link&gt;
+tags for cascading style sheets.<br />
+Note: A header section NEVER contains any content.
+</p>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<h2 id="Body">Body section</h2>
+<p class="examples">
+&lt;body&gt;<br />
+&lt;div id="title"&gt;<br />
+&lt;h1&gt;Sign Language&lt;/h1&gt;<br />
+	&lt;ul id="navbar"&gt;<br />
+			&lt;li&gt;&lt;a href="#Introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;<br />
+	&lt;/ul&gt;<br />
+&lt;/div&gt;<br />
+&lt;div class="normalbox"&gt;<br />
+&lt;h2&gt;&lt;a id="Introduction"&gt;Introduction&lt;/a&gt;&lt;/h2&gt;<br />
+&lt;p&gt;Sign language is a language that uses manual communication to convey meaning.&lt;/p&gt;<br />
+&lt;hr /&gt;<br />
+&lt;/div&gt;<br />
+&lt;/body&gt;<br />
+</p>
+<p>
+The body section contains the content that the user sees when loading up a webpage.
+The appearance of it may change from the information declared in the header such as scripts and style sheets.
+</p>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<h2 id="Tags">Tags</h2>
+<p>
+An HTML tag consists of an opening tag and an ending tag.
+</p>
+<p class="examples">
+&lt;h1&gt;A heading&lt;/h1&gt;
+</p>
+<p>
+Some tags dont display any content.
+</p>
+<p class="examples">
+&lt;br /&gt;  &lt;hr /&gt;
+</p>
+<p>
+Block level tags can contain nested inline tags.
+</p>
+<p class="examples">
+&lt;p&gt;The &lt;strong&gt;bold&lt;/strong&gt; part of a paragraph&lt;/p&gt;
+</p>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<h2 id="Attributes">Attributes</h2>
+<p>
+All HTML tags can have attributes. They are always declared in the opening tag. They usually come in
+name/value pairs (name="value"). Every attribute in XHTML must have a value. The most common attributes
+which can be used on any body tag are class, id, style and title.
+</p>
+<p class="examples">
+&lt;a href="https://www.w3schools.com"&gt;A link&lt;/a&gt;
+</p>
+<p>
+checked -This is incorrect
+</p>
+<p>
+checked="checked" -This is correct
+</p>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<h2 id="Block_Tags">Block-level tags</h2>
+<p>
+Heading tags can have 6 different levels (only one h1 tag per page) and levels cannot be skipped.
+</p>
+<p class="examples">
+&lt;h1&gt;A heading&lt;/h1&gt;
+</p>
+<p>
+&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; -This is correct
+</p>
+<p>
+&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h2&gt; -This is correct
+</p>
+<p>
+&lt;h1&gt;  &lt;h3&gt; -This is incorrect
+</p>
+<p>
+&lt;h2&gt; &lt;h3&gt; -This is incorrect
+</p>
+<p>
+Paragraph tags are used as containers for body text.
+</p>
+<p class="examples">
+&lt;p&gt;A block level paragraph&lt;/p&gt;
+</p>
+<p>
+Line breaks can be used but should be avoided.
+</p>
+<p class="examples">
+&lt;p&gt;A line&lt;br /&gt;Break&lt;/p&gt;
+</p>
+<p>
+A horizontal line can be created using the &lt;hr&gt; tag.
+</p>
+<p class="examples">
+&lt;p&gt;Section 1&lt;/p&gt; &lt;hr /&gt; &lt;p&gt;Section 2&lt;/p&gt;
+</p>
+<p>
+There are 3 different types of lists; Unordered, Ordered and Definition lists.
+</p>
+<p>
+Unordered list (bullet points)
+</p>
+<p class="examples">
+&lt;ul&gt;<br />
+	&lt;li&gt;Bullet Item&lt;/li&gt;<br />
+	&lt;li&gt;Bullet Item&lt;/li&gt;<br />
+	&lt;li&gt;Bullet Item&lt;/li&gt;<br />
+&lt;/ul&gt;
+</p>
+<p>
+Ordered list (numbers)
+</p>
+<p class="examples">
+&lt;ol&gt;<br />
+	&lt;li&gt;Item 1&lt;/li&gt;<br />
+	&lt;li&gt;Item 2&lt;/li&gt;<br />
+	&lt;li&gt;Item 3&lt;/li&gt;<br />
+&lt;/ol&gt;
+</p>
+<p>
+Definition list (term and definition)
+</p>
+<p class="examples">
+&lt;dl&gt;<br />
+	&lt;dt&gt;List&lt;/dt&gt;<br />
+		&lt;dd&gt;A collection of items&lt;/dd&gt;<br />
+	&lt;dt&gt;Tag&lt;/dt&gt;<br />
+		&lt;dd&gt;A type of HTML element&lt;/dd&gt;<br />
+&lt;/dl&gt;
+</p>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<h2 id="Inline_Tags">Inline tags</h2>
+<p>
+The most common inline tags include &lt;em&gt; (for emphasis), &lt;strong&gt; (gives text in <strong>bold</strong>),
+&lt;cite&gt; (for citations or references), &lt;code&gt; (for program code in a monospace font).
+</p>
+<p>
+Links can be added using the &lt;a&gt; tag. The location of the link is placed in the href attribute.
+</p>
+<p>
+To link to other websites:
+</p>
+<p class="examples">
+&lt;a href="www.wikipedia.com"&gt;Wikipedia&lt;/a&gt;
+</p>
+<p>
+To link to other pages on a local site:
+</p>
+<p class="examples">
+&lt;a href="mysite.html"&gt;My website&lt;/a&gt;
+</p>
+<p>
+To link to other parts of a webpage:
+</p>
+<p class="examples">
+&lt;a href="mysite.html#section5"&gt;Section 5 of my website&lt;/a&gt;
+</p>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<h2 id="Tables">Tables</h2>
+<p>
+Tables are only used to display tabular data in webpages (can be enhanced using CSS).
+</p>
+<p class="examples">
+&lt;table&gt;<br />
+	&lt;tr&gt;<br />
+		&lt;th&gt;Country&lt;/th&gt;&lt;th&gt;Population&lt;/th&gt;<br />
+	&lt;/tr&gt;<br />
+	&lt;tr&gt;<br />
+		&lt;td&gt;USA&lt;/td&gt;&lt;td&gt;200m&lt;/td&gt;<br />
+	&lt;/tr&gt;<br />
+	&lt;tr&gt;<br />
+		&lt;td&gt;Japan&lt;/td&gt;&lt;td&gt;10m&lt;/td&gt;<br />
+	&lt;/tr&gt;<br />
+&lt;/table&gt;
+</p>
+<p>
+The most common table attributes are border (controls outside border properties), width (width of table),
+cellspacing (controls distance between two cells), cellpadding (controls distance between cell content and cell egdes).
+</p>
+<p>
+For more detailed information on tables visit <a href="https://www.w3schools.com/html/html_tables.asp">this link at W3Schools.</a> 
+</p>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<h2 id="Structural_Grouping">Structural grouping</h2>
+<p>
+To group some block-level elements together the &lt;div&gt; tag can be used with class and id attributes to add styles and scripts
+to single blocks.
+</p>
+<p>
+To style inline fragments of content the &lt;span&gt; is used to style lines of text or single characters.
+</p>
+<p class="examples">
+&lt;div id="section1" class="title"&gt;<br />
+	&lt;h1&gt;Heading&lt;/h1&gt;<br />
+	&lt;p&gt;Paragraph&lt;/p&gt;<br />
+&lt;/div&gt;<br /><br />
+&lt;p&gt;The &lt;span&gt;bold&lt;/span&gt; part of paragraph&lt;/p&gt;
+</p>
+</div>
+
+<hr/>
+
+
+<div class="contentbox">
+<h2 id="Multimedia">Images and Multimedia</h2>
+<p>
+An image can be loaded on a webpage by using the &lt;img&gt; tag with the src attribute acting as the URL location of the image and
+a required alt attribute that provides a description of the image if it fails to load. The width and height attributes are used to
+provide the dimanesions of images.
+</p>
+<p class="examples">
+&lt;img src="LocationOfImage.png" alt="wikipedia logo" /&gt;
+</p>
+<p>
+For other multimedia objects, the &lt;object&gt; and &lt;param&gt; tags are the most universal way of displaying media objects.
+Previously, the &lt;embed&gt; tag had been widely used but is now starting to phase out.
+</p>
+<p class="examples">
+&lt;object width="300" height="240" <br />
+	type="application/x-shockwave-flash"<br />
+	data="http://videoURL.tv"&gt;<br />
+&lt;param name="movie" value="http://videoURL.tv" /&gt;<br />
+&lt;param name="allowFullScreen" value="true" /&gt;<br />
+&lt;param name="allowScriptAccess" value="always" /&gt;<br />
+&lt;/object&gt;
+</p>
+
+<p>
+The HTML 5 specification has the updated and improved video and audio tags to play multimedia.
+</p>
+<p class="examples">
+&lt;video width="300" height="240"<br />
+	src="videoURL.ogg"<br />
+	type="video/ogg"<br />
+	controls="controls"&gt;<br />
+&lt;/video&gt;
+</p>
+</div>
+</div>
+<hr/>
+
+<div id="footer">
+<p>
+Information from <a href="https://www.ncl.ac.uk/computing">Newcastle University School of Computing Science</a> | Design by <a href="http://www.mitchinson.net">www.mitchinson.net</a>
+</p>
+</div>
+</div>
+
+</body>
+</html>
