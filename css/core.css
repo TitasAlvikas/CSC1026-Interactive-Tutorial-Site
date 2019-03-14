@@ -9,7 +9,7 @@ body {
 	padding: 0;
 	font: 83% "Trebuchet MS", arial, verdana, tahoma, sans-serif;
 	line-height: 1.7em;
-	background-image: url("img/bg-1-full.jpg");
+	background-image: url("../img/bg-1-full.jpg");
 	/*background: #2e2e2e;*/
 }
 #container {
